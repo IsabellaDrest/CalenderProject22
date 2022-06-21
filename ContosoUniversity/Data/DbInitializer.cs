@@ -14,14 +14,10 @@ namespace ContosoUniversity.Data
 
             var students = new Student[]
             {
-                new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2019-09-01")},
-                new Student{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2018-09-01")},
-                new Student{FirstMidName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2016-09-01")},
-                new Student{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2018-09-01")},
-                new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2019-09-01")}
+                new Student{FirstMidName="Jacques",LastName="Giordano"},
+                new Student{FirstMidName="Morten Tiemroth ",LastName="Dal-Christensen"},
+                new Student{FirstMidName="Isabella Drest",LastName="Rasmussen"}
+                
             };
 
             context.Students.AddRange(students);
@@ -41,7 +37,7 @@ namespace ContosoUniversity.Data
             context.Courses.AddRange(courses);
             context.SaveChanges();
 
-            var enrollments = new Enrollment[]
+           /* var enrollments = new Enrollment[]
             {
                 new Enrollment{StudentID=1,CourseID=1050,Grade=Grade.A},
                 new Enrollment{StudentID=1,CourseID=4022,Grade=Grade.C},
@@ -56,8 +52,9 @@ namespace ContosoUniversity.Data
                 new Enrollment{StudentID=6,CourseID=1045},
                 new Enrollment{StudentID=7,CourseID=3141,Grade=Grade.A},
             };
-
             context.Enrollments.AddRange(enrollments);
+            */
+
             context.SaveChanges();
         }
     }
